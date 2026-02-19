@@ -1,7 +1,7 @@
 using System.Data.SQLite;
 using ParcialPeliculas.Models; // <-- Con esto alcanza para Models y el Enum Categoria
 
-namespace ParcialCine.Repositories
+namespace ParcialPeliculas.Repositories
 {
     public class PeliculaRepository : IPeliculaRepository
     {
@@ -44,7 +44,7 @@ namespace ParcialCine.Repositories
             using (var connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
-                [cite_start]// SQL del PDF [cite: 78]
+                // SQL del PDF
                 var command = new SQLiteCommand("INSERT INTO Peliculas (Titulo, Anio, Categoria) VALUES (@Titulo, @Anio, @Categoria);", connection);
                 command.Parameters.AddWithValue("@Titulo", pelicula.Titulo);
                 command.Parameters.AddWithValue("@Anio", pelicula.Anio);
@@ -58,7 +58,7 @@ namespace ParcialCine.Repositories
             using (var connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
-                [cite_start]// SQL del PDF [cite: 80]
+                // SQL del PDF 
                 var command = new SQLiteCommand("UPDATE Peliculas SET Titulo = @Titulo, Anio = @Anio, Categoria = @Categoria WHERE Id = @Id;", connection);
                 command.Parameters.AddWithValue("@Titulo", pelicula.Titulo);
                 command.Parameters.AddWithValue("@Anio", pelicula.Anio);
@@ -73,7 +73,7 @@ namespace ParcialCine.Repositories
             using (var connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
-                [cite_start]// SQL del PDF [cite: 82]
+                // SQL del PDF
                 var command = new SQLiteCommand("DELETE FROM Peliculas WHERE Id = @Id;", connection);
                 command.Parameters.AddWithValue("@Id", id);
                 command.ExecuteNonQuery();
@@ -86,7 +86,7 @@ namespace ParcialCine.Repositories
             using (var connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
-                [cite_start]// SQL del PDF [cite: 75]
+                // SQL del PDF 
                 var command = new SQLiteCommand("SELECT Id, Titulo, Anio, Categoria FROM Peliculas WHERE Id = @Id;", connection);
                 command.Parameters.AddWithValue("@Id", id);
                 using (var reader = command.ExecuteReader())

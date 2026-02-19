@@ -1,3 +1,6 @@
+using ParcialPeliculas.Repositories;
+using ParcialPeliculas.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar MVC
@@ -5,7 +8,8 @@ builder.Services.AddControllersWithViews();
 
 // Agregar Session
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options => {
+builder.Services.AddSession(options =>
+{
     options.IdleTimeout = TimeSpan.FromMinutes(20);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
@@ -14,7 +18,7 @@ builder.Services.AddSession(options => {
 // Agregar HttpContextAccessor (Necesario para AuthenticationService)
 builder.Services.AddHttpContextAccessor();
 
-[cite_start]// Inyección de Dependencias 
+// Inyección de Dependencias 
 builder.Services.AddScoped<IPeliculaRepository, PeliculaRepository>();
 builder.Services.AddScoped<IUserRepository, UsuarioRepository>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
@@ -33,7 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // ACTIVAR SESSION
-app.UseSession(); 
+app.UseSession();
 
 app.UseAuthorization();
 

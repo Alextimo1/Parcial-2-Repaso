@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using ParcialPeliculas.Models; // <-- ¡Cambiado! Antes decía Enums
 using System.ComponentModel.DataAnnotations;
 
-namespace ParcialCine.ViewModels
+namespace ParcialPeliculas.ViewModels
 {
     public class PeliculaIndexViewModel
     {

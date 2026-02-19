@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParcialPeliculas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c475cf395ae6b32132bf679a5c00301afeed281e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea866e081f3a4f7e577c9835681be84318f28a9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParcialPeliculas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParcialPeliculas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
