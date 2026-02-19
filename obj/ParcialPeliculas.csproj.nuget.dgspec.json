@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\ParcialPeliculas\\ParcialPeliculas.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\Parcial-2-Repaso\\ParcialPeliculas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\ParcialPeliculas\\ParcialPeliculas.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\Parcial-2-Repaso\\ParcialPeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\ParcialPeliculas\\ParcialPeliculas.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\Parcial-2-Repaso\\ParcialPeliculas.csproj",
         "projectName": "ParcialPeliculas",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\ParcialPeliculas\\ParcialPeliculas.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\Parcial-2-Repaso\\ParcialPeliculas.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\ParcialPeliculas\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Universidad\\Facultad-Practica 2do Cuatrimestre\\2do Año\\Taller de lenguajes II\\Parcial2\\Proyecto MVC\\Parcial-2-Repaso\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

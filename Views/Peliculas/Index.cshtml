@@ -1,0 +1,22 @@
+@model List<ParcialPeliculas.ViewModels.PeliculaIndexViewModel>
+@inject ParcialPeliculas.Services.IAuthenticationService AuthService
+
+<h2>Catálogo de Películas</h2>
+@if(AuthService.HasAccessLevel("Admin")) {
+    <a asp-action="Create" class="btn btn-primary">Nueva Película</a>
+}
+<table class="table">
+    <thead><tr><th>Título</th><th>Año</th><th>Categoría</th><th>Acciones</th></tr></thead>
+    <tbody>
+        @foreach (var p in Model) {
+            <tr>
+                <td>@p.Titulo</td><td>@p.Anio</td><td>@p.Categoria</td>
+                <td>
+                    @if(AuthService.HasAccessLevel("Admin")) {
+                        <a asp-action="Delete" asp-route-id="@p.Id" class="btn btn-danger">Borrar</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

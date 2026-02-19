@@ -1,4 +1,4 @@
-namespace ParcialCine.Models
+namespace ParcialPeliculas.Models
 {
     public enum Categoria
     {
